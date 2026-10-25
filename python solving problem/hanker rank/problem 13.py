@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to 
+
+from itertools import groupby
+
+s = input()
+
+for key, group in groupby(s):
+    count = len(list(group))
+    print((count, int(key)), end=" ")
